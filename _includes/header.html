@@ -20,6 +20,9 @@
           <p class="site-description">{{ site.header.tagline }}</p>
           {% endif %}
         </div><!-- .site-identity -->
+
+        {% include search_lunr.html %}
+
         {% if site.menus.main and site.header.has_nav %}
         <button id="menu-toggle" class="menu-toggle"><span class="screen-reader-text">Menu</span><span class="icon-menu"
             aria-hidden="true"></span></button>
